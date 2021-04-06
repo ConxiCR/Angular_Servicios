@@ -5,7 +5,8 @@ import { Persona } from '../models/persona.model';
 @Injectable({
   providedIn: 'root'
 })
-//clase
+//clase. Creamos un servicio donde generamos distitntos métodos para que los componentes accedan a los valores
+//que hemos definido. Aqui se recogen a través de una array. Pero podria ser desde un fichero o desde internet(servidor)
 export class PersonasService {
   //array de tipo personas
   personas: Persona[];
