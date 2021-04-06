@@ -11,12 +11,17 @@ export class AppComponent {
 
   arrPersonas: Persona[];
   //injectamos el componente de forma private para poder acceder desde todos los métodos
-  constructor(private PersonasService: PersonasService){ }
+  constructor(private personasService: PersonasService){ }
 
   ngOnInit(){
     //llamamos al método. creamos variable personas. El metodo getAll se podrá utilizar desde cualquier componente y podrá recibvir los datos
     //const personas = this.PersonasService.getAll();
     //console.log(personas);
-    this.arrPersonas = this.PersonasService.getAll();
+    this.arrPersonas = this.personasService.getAll();
+  }
+  //comparto método con todos los componentes
+  onClick(){
+    //método del servicio
+    this.personasService.create(new Persona('Nueva', 'García', 45, true ))
   }
 }

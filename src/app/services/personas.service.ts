@@ -24,5 +24,11 @@ export class PersonasService {
   getAll(){
     return this.personas;
   }
+  //nuevo método con parámetro nueva persona y objeto Persona
+  create(personaNueva: Persona){
+    //al array de personas agrego nueva persona
+    this.personas.push(personaNueva);
+
+  }
 
 }
