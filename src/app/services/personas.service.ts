@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 //importo la clase Persona para poner el tipo a la propiedad o variable
 import { Persona } from '../models/persona.model';
 
+//singleton. Un unico componente, servicio, objeto compartido por todos los componentes. Compartir el servicio dentro de todos los componentes
 @Injectable({
   providedIn: 'root'
 })

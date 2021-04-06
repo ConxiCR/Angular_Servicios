@@ -5,7 +5,9 @@ import { Persona } from './models/persona.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  //servicio para utilizar sólo en el componente que lo indique
+  providers: [PersonasService]
 })
 export class AppComponent {
 

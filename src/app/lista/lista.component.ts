@@ -5,7 +5,9 @@ import { Persona } from '../models/persona.model';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
-  styleUrls: ['./lista.component.css']
+  styleUrls: ['./lista.component.css'],
+  //servicio para utilizar sólo en este componente
+  providers: [PersonasService]
 })
 export class ListaComponent implements OnInit {
   //declaramos la variable importandolo des del modelo
