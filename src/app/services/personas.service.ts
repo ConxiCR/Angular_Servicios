@@ -5,6 +5,7 @@ import { Persona } from '../models/persona.model';
 @Injectable({
   providedIn: 'root'
 })
+//clase
 export class PersonasService {
   //array de tipo personas
   personas: Persona[];
@@ -18,4 +19,9 @@ export class PersonasService {
       new Persona('Lorenzo', 'Romero', 65, true)
     ];
   }
+  //metodo para acceder a los datos fuera del servicio. No se pueda atraves de la propiedad
+  getAll(){
+    return this.personas;
+  }
+
 }
